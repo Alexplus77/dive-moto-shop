@@ -17,7 +17,6 @@ header{
     text-align: center;
 }
 .headerIcon {
-
     display: grid;
     grid-auto-flow: column;
     justify-items: center;
