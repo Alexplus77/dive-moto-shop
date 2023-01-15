@@ -1,0 +1,1 @@
+export { SliderPromo } from "./SliderPromo";

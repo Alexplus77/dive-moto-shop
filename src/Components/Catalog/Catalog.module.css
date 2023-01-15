@@ -1,0 +1,8 @@
+.catalog{
+    padding-top: 80px;
+    width:1171px;
+    display: grid;
+    gap:30px;
+    grid-template-columns: repeat(3, 370px);
+
+}

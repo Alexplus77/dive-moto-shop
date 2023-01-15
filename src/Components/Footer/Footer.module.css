@@ -1,0 +1,70 @@
+.footerContainer{
+    display: grid;
+
+    width: 100%;
+    height: 232px;
+    background: #F0F0F4;
+}
+.footerMainContainer{
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+}
+.subscribeContainer{
+    display: grid;
+    margin-left: 8%;
+    height: fit-content;
+    gap:20px;
+    margin-top: 30px;
+}
+.subscribeText{
+    width: 240px;
+    height: 34px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2F3035;
+}
+.formSubmit{
+    width: fit-content;
+    display: grid;
+    grid-auto-flow: column;
+}
+.inputSubmit{
+    width: 201px;
+    height: 33px;
+    background: #FFFFFF;
+    border: 1px  #F0F0F4 solid;
+}
+.btnSubmit{
+    background: #1C62CD;
+}
+.infoContainer{
+    display: grid;
+    width: fit-content;
+    height: 104px;
+    margin-top: 40px;
+}
+.navInfoBold{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2F3035;
+}
+.iconFooter{
+    margin-top: 60px;
+   width: fit-content;
+    display: grid;
+    grid-auto-flow: column;
+gap: 15px;
+}
+.iconFooter>img{
+    cursor: pointer;
+}
+.footerFooter{
+    display: grid;
+    grid-auto-flow: column;
+    width: fit-content;
+    gap: 50px;
+    margin-left: 35%;
+}

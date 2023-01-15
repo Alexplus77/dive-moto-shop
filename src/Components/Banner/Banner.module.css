@@ -1,0 +1,28 @@
+.bannerContainer{
+    display: grid;
+    grid-auto-flow: column;
+    width: 1170px;
+    height: 165px;
+    background: #1C62CD;
+    align-items: center;
+
+}
+.imageContainer{
+margin-left: 8%;
+}
+.bannerText{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+display: grid;
+}
+.btnBanner{
+    width: 230px;
+    height: 55px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 50px;
+    color: #2F3035;
+    text-align: center;
+}

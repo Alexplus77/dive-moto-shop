@@ -1,0 +1,10 @@
+
+.App {
+  display: grid;
+  width: 1300px;
+  padding-top: 30px;
+justify-items: center;
+  gap: 46px;
+  background-color: white;
+}
+

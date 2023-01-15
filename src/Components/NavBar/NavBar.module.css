@@ -1,0 +1,14 @@
+.navBar{
+    width: 1171px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    height: 53px;
+    background: #F0F0F4;
+}

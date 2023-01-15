@@ -1,0 +1,7 @@
+.slider1Promo{
+    width: 1171px;
+    display: grid;
+    justify-self: center;
+    grid-auto-flow: column;
+    gap: 36px;
+}

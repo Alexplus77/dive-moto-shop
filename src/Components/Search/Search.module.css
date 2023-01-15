@@ -1,0 +1,30 @@
+.navBarSearch{
+    width: fit-content;
+    display: grid;
+    gap: 54px;
+    grid-auto-flow: column;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+.formSearch{
+    width: fit-content;
+    padding-top: 37px;
+    display: grid;
+    grid-auto-flow: column;
+    border-radius: 3px;
+}
+.inputSearch{
+    width:1050px;
+    background: #F0F0F4;
+}
+.btnSearch{
+    width: 145px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: blue;
+    color: white;
+}

@@ -1,0 +1,29 @@
+.logo{
+
+}
+header{
+    width: 1171px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 50px;
+}
+.headerItem{
+    justify-self: center;
+    align-self: center;
+    width: fit-content;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+.headerIcon {
+
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
