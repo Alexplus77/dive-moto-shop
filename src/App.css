@@ -2,7 +2,8 @@
 .App {
   display: grid;
   width: 1300px;
-  padding-top: 30px;
+  min-height: 100vh;
+  padding: 30px;
 justify-items: center;
   gap: 46px;
   background-color: white;

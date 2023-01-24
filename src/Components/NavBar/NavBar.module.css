@@ -1,5 +1,5 @@
 .navBar{
-    width: 1171px;
+    width: 100%;
     display: grid;
     grid-auto-flow: column;
     justify-self: center;
@@ -11,4 +11,17 @@
     text-transform: capitalize;
     height: 53px;
     background: #F0F0F4;
+}
+.navBarItem{
+    color: #2F3035;
+    text-decoration-line: none;
+
+}
+.navBarItemActive{
+    display: grid;
+    color: #2F3035;
+    align-items: center;
+    height: 100%;
+    text-decoration-line: none;
+   border-bottom: 3px  #1C62CD solid;
 }

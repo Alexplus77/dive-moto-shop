@@ -1,8 +1,8 @@
 .logo{
-
+cursor: pointer;
 }
 header{
-    width: 1171px;
+    width: 100%;
     display: grid;
     grid-auto-flow: column;
     gap: 50px;
@@ -25,4 +25,5 @@ header{
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    cursor: pointer;
 }
