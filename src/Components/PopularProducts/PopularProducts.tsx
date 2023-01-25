@@ -2,13 +2,8 @@ import { Button } from "antd";
 import React from "react";
 import { CardProduct } from "../CardProduct";
 import s from "./PopularProducts.module.css";
+import { IProductItem } from "../../Types/types";
 
-interface ProductItem {
-  path: string;
-  name: string;
-  price: number;
-  sale: boolean;
-}
 interface ITarget {
   target: boolean;
 }
@@ -60,8 +55,8 @@ export const PopularProducts: React.FC<ITarget> = ({ target }) => {
         </nav>
       </header>
       <div className={s.catalogItemSlider}>
-        {products.slice(0, 4).map((item: ProductItem) => (
-          <CardProduct {...item} />
+        {products.slice(0, 4).map((item: IProductItem) => (
+          <CardProduct item={item} />
         ))}
       </div>
       {target && <Button className={s.btnPopularProduct}>ПОКАЗАТЬ ЕЩЕ</Button>}

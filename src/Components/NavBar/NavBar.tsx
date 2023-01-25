@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./NavBar.module.css";
+import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
   const navBar = [
@@ -14,8 +15,16 @@ export const NavBar = () => {
   ];
   return (
     <nav className={s.navBar}>
-      {navBar.map((item) => (
-        <span key={item}>{item}</span>
+      {navBar.map((item, i) => (
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? s.navBarItemActive : s.navBarItem
+          }
+          to={`/category/${item}`}
+          key={item}
+        >
+          {item}
+        </NavLink>
       ))}
     </nav>
   );

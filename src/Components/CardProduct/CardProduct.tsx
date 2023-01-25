@@ -1,14 +1,12 @@
 import { Card } from "antd";
 import React from "react";
+import { IProductItem } from "../../Types/types";
 import s from "./CardProduct.module.css";
 
-interface Props {
-  path: string;
-  name: string;
-  price: number;
-  sale: boolean;
+interface IProps {
+  item: IProductItem;
 }
-export const CardProduct = ({ ...item }: Props) => {
+export const CardProduct = ({ item }: IProps) => {
   return (
     <Card
       key={item.name}
