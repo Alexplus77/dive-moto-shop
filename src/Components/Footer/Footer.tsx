@@ -1,7 +1,5 @@
 import s from "./Footer.module.css";
 import { Button, Form, Input } from "antd";
-import { Simulate } from "react-dom/test-utils";
-import submit = Simulate.submit;
 
 export const Footer = () => {
   const infoShop = [
@@ -37,14 +35,20 @@ export const Footer = () => {
         </section>
         <section className={s.infoContainer}>
           {infoShop.map((elem, i) => (
-            <nav className={i === 0 ? s.navInfoBold : s.navInfoRegular}>
+            <nav
+              key={elem}
+              className={i === 0 ? s.navInfoBold : s.navInfoRegular}
+            >
               {elem}
             </nav>
           ))}
         </section>
         <section className={s.infoContainer}>
           {shopLinks.map((elem, i) => (
-            <nav className={i === 0 ? s.navInfoBold : s.navInfoRegular}>
+            <nav
+              key={i + elem}
+              className={i === 0 ? s.navInfoBold : s.navInfoRegular}
+            >
               {elem}
             </nav>
           ))}

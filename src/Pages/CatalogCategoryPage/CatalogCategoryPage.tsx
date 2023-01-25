@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import s from "./CatalogCategoryPage.module.css";
 import { Breadcrumb, Button, Select } from "antd";
 import { Option } from "antd/es/mentions";
+import { ParamsBlock } from "../../Components/ParamsBlock";
 
 export const CatalogCategoryPage = () => {
   const { name } = useParams();
@@ -25,9 +26,9 @@ export const CatalogCategoryPage = () => {
         </div>
         <div className={s.sortItem2}>
           <Select defaultValue={"Популярности"}>
-            <Option value={"populate"}>Популярности</Option>
-            <Option value={"price"}>Цене</Option>
-            <Option value={"discount"}>Скидкам</Option>
+            <Select.Option value={"populate"}>Популярности</Select.Option>
+            <Select.Option value={"price"}>Цене</Select.Option>
+            <Select.Option value={"discount"}>Скидкам</Select.Option>
           </Select>
           <div className={s.iconGroup}>
             <img alt={"..."} src={"/Images/icons/sortIcon1.svg"} />
@@ -36,7 +37,7 @@ export const CatalogCategoryPage = () => {
         </div>
       </section>
       <section className={s.catalogContainer}>
-        <div>Params</div>
+        <ParamsBlock />
         <div>ProductList</div>
       </section>
     </section>
