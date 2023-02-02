@@ -2,8 +2,9 @@ import { useParams, useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import s from "./CatalogCategoryPage.module.css";
 import { Breadcrumb, Button, Select } from "antd";
-import { Option } from "antd/es/mentions";
+import { dbCatalogHydrocircles } from "../../DataBase/db";
 import { ParamsBlock } from "../../Components/ParamsBlock";
+import { CardProduct } from "../../Components/CardProduct";
 
 export const CatalogCategoryPage = () => {
   const { name } = useParams();
@@ -38,7 +39,11 @@ export const CatalogCategoryPage = () => {
       </section>
       <section className={s.catalogContainer}>
         <ParamsBlock />
-        <div>ProductList</div>
+        <div className={s.productListContainer}>
+          {dbCatalogHydrocircles.map((el) => (
+            <CardProduct key={el.name + Math.random()} item={el} />
+          ))}
+        </div>
       </section>
     </section>
   );
