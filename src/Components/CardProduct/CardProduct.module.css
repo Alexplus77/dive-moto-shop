@@ -1,4 +1,5 @@
 .containerCardContent{
+    position: relative;
     display: grid;
     gap:15px;
     color: #2F3035;
@@ -6,7 +7,7 @@
 .productCard{
     display: grid;
     width: 271px;
-    height: 420px;
+    height:fit-content;
     bottom: 0;
     top:0;
     left: 0;
@@ -63,6 +64,7 @@
     justify-items: center;
     align-items: center;
     margin-left: 79%;
+    transform: translateY(25px);
 }
 .outOfStockContainer{
     display: grid;
@@ -80,4 +82,24 @@
     line-height: 19px;
     color: #1C62CD;
     text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+.hoverCard{
+    position: absolute;
+text-align: center;
+transform: translateX(-210px) translateY(80px);
+padding-top: 20px;
+    background: #FFFFFF;
+    opacity: 0.9;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    width: 200px;
+    height: 41px;
+    z-index: 999;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
 }

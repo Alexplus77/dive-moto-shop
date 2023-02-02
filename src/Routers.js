@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import { MainPage } from "./Pages/MainPage";
 import { CatalogCategoryPage } from "./Pages/CatalogCategoryPage";
+import { CardProductPage } from "./Pages/CardProductPage";
+import { LocationTest } from "./HOC/locationTest";
 import App from "./App";
 
 export const Routers = createBrowserRouter([
@@ -14,7 +16,19 @@ export const Routers = createBrowserRouter([
       },
       {
         path: "/category/:name",
-        element: <CatalogCategoryPage />,
+        element: (
+          <LocationTest>
+            <CatalogCategoryPage />
+          </LocationTest>
+        ),
+      },
+      {
+        path: "/product/:name",
+        element: (
+          <LocationTest>
+            <CardProductPage />
+          </LocationTest>
+        ),
       },
     ],
   },

@@ -63,5 +63,11 @@ h1{
     gap: 20px;
 }
 .catalogContainer>*{
-    border: 2px red solid;
+
+}
+.productListContainer{
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
 }
