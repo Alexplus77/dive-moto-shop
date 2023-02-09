@@ -3,9 +3,17 @@ import { Search } from "../../Components/Search";
 import { Catalog } from "../../Components/Catalog";
 import { Banner } from "../../Components/Banner";
 import { PopularProducts } from "../../Components/PopularProducts";
-import React from "react";
+import { getProductsItems } from "../../Redux/middlewares/getProductsItems";
+import { useAppDispatch, useAppSelector } from "../../Hooks/reduxHooks";
+import React, { useEffect } from "react";
 import s from "./MainPage.module.css";
 export const MainPage = () => {
+  const dispatch = useAppDispatch();
+  const products = useAppSelector((state) => state.productsData.productsItem);
+  useEffect(() => {
+    dispatch(getProductsItems());
+  }, []);
+  console.log(products);
   return (
     <section className={s.mainPageContainer}>
       <SliderPromo />

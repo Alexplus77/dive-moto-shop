@@ -2,7 +2,7 @@ export const dbCatalogHydrocircles = [
   {
     id: new Date().getMilliseconds(),
     path: "/Images/hydrocircles/gidrotsikl-brp-seadoo-gti-130hp-se-blackmango-orange-73936232995706_small6 1.png",
-    name: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\\Mango",
+    name: "Гидроцикл BRP SeaDoo GTI 130hp SE Black Mango",
     price: 1049500,
     sale: true,
   },
