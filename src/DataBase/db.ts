@@ -22,13 +22,6 @@ export const dbCatalogHydrocircles = [
   },
   {
     id: new Date().getMilliseconds(),
-    path: "/Images/hydrocircles/gidrotsikl-brp-seadoo-gti-130hp-se-blackmango-orange-73936232995706_small6 3.png",
-    name: "Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream",
-    price: 0,
-    sale: false,
-  },
-  {
-    id: new Date().getMilliseconds(),
     path: "/Images/hydrocircles/gidrotsikl-brp-seadoo-gti-130hp-se-blackmango-orange-73936232995706_small6 4.png",
     name: "Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal",
     price: 1543000,
@@ -41,13 +34,7 @@ export const dbCatalogHydrocircles = [
     price: 857666,
     sale: false,
   },
-  {
-    id: new Date().getMilliseconds(),
-    path: "/Images/hydrocircles/gidrotsikl-brp-seadoo-gti-130hp-se-blackmango-orange-73936232995706_small6 5.png",
-    name: "Гидроцикл BRP SeaDoo Spark GTS 90hp Rental",
-    price: 857666,
-    sale: true,
-  },
+
   {
     id: new Date().getMilliseconds(),
     path: "/Images/hydrocircles/gidrotsikl-brp-seadoo-gti-130hp-se-blackmango-orange-73936232995706_small6 6.png",

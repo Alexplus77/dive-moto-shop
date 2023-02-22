@@ -13,7 +13,7 @@ export const MainPage = () => {
   useEffect(() => {
     dispatch(getProductsItems());
   }, []);
-  console.log(products);
+
   return (
     <section className={s.mainPageContainer}>
       <SliderPromo />

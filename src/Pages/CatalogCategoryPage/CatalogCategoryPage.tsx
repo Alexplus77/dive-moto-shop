@@ -5,10 +5,19 @@ import { Breadcrumb, Button, Select } from "antd";
 import { dbCatalogHydrocircles } from "../../DataBase/db";
 import { ParamsBlock } from "../../Components/ParamsBlock";
 import { CardProduct } from "../../Components/CardProduct";
+import { useAppDispatch, useAppSelector } from "../../Hooks/reduxHooks";
+import { useEffect } from "react";
+import { getProductsItems } from "../../Redux/middlewares/getProductsItems";
 
 export const CatalogCategoryPage = () => {
   const { name } = useParams();
+  const dispatch = useAppDispatch();
+  const items = useAppSelector((state) => state.productsData.productsItem);
+  useEffect(() => {
+    dispatch(getProductsItems());
+  }, []);
 
+  console.log(items);
   return (
     <section className={s.containerPage}>
       <Breadcrumb className={s.breadcrumb} separator={">"}>
@@ -40,8 +49,8 @@ export const CatalogCategoryPage = () => {
       <section className={s.catalogContainer}>
         <ParamsBlock />
         <div className={s.productListContainer}>
-          {dbCatalogHydrocircles.map((el) => (
-            <CardProduct key={el.name + Math.random()} item={el} />
+          {items.map((el) => (
+            <CardProduct key={el._id} item={el} />
           ))}
         </div>
       </section>
