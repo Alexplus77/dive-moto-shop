@@ -12,12 +12,12 @@ import { getProductsItems } from "../../Redux/middlewares/getProductsItems";
 export const CatalogCategoryPage = () => {
   const { name } = useParams();
   const dispatch = useAppDispatch();
-  const items = useAppSelector((state) => state.productsData.productsItem);
+  const items = useAppSelector((state) => state.productsData.productsList);
+
   useEffect(() => {
     dispatch(getProductsItems());
   }, []);
 
-  console.log(items);
   return (
     <section className={s.containerPage}>
       <Breadcrumb className={s.breadcrumb} separator={">"}>

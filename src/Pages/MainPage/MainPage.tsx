@@ -9,7 +9,7 @@ import React, { useEffect } from "react";
 import s from "./MainPage.module.css";
 export const MainPage = () => {
   const dispatch = useAppDispatch();
-  const products = useAppSelector((state) => state.productsData.productsItem);
+  const products = useAppSelector((state) => state.productsData.productsList);
   useEffect(() => {
     dispatch(getProductsItems());
   }, []);

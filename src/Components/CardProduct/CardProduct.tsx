@@ -17,8 +17,8 @@ export const CardProduct = ({ item }: IProps) => {
     setOnMouse(false);
   };
   const navigatePage = () => {
-    navigate(`/product/${item.price}`, {
-      state: { category: name, product: item.price },
+    navigate(`/product/${item.name}`, {
+      state: { category: name, product: item.name },
     });
   };
   return (

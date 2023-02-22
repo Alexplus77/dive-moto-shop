@@ -18,7 +18,7 @@ export const PopularProducts: React.FC<ITarget> = ({ target }) => {
     "инструменты",
     "аксессуары ",
   ];
-  const products = useAppSelector((state) => state.productsData.productsItem);
+  const products = useAppSelector((state) => state.productsData.productsList);
 
   return (
     <section className={s.popularProducts}>
