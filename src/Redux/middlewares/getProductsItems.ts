@@ -18,3 +18,12 @@ export const getProductByName = createAsyncThunk<IProductItem, string>(
       .get<IProductItem>(`${process.env.REACT_APP_API}getProductByName/${name}`)
       .then(({ data }) => data)
 );
+export const getCategoryByName = createAsyncThunk<IProductItem[], string>(
+  "productSlice/getCategoryByName",
+  (name) =>
+    axios
+      .get<IProductItem[]>(
+        `${process.env.REACT_APP_API}getCategoryByName/${name}`
+      )
+      .then(({ data }) => data)
+);

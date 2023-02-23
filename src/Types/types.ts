@@ -1,7 +1,7 @@
 export interface IProductItem {
   _id: string;
   name: string;
-  category?: string;
+  category: string;
   path: string;
   sale: boolean;
   price: number;

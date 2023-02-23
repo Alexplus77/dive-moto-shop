@@ -32,7 +32,7 @@ export const PopularProducts: React.FC<ITarget> = ({ target }) => {
       </header>
       <div className={s.catalogItemSlider}>
         {products.slice(0, 4).map((item: IProductItem) => (
-          <CardProduct key={item.name} item={item} />
+          <CardProduct key={item._id} item={item} />
         ))}
       </div>
       {target && <Button className={s.btnPopularProduct}>ПОКАЗАТЬ ЕЩЕ</Button>}

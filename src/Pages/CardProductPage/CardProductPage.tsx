@@ -23,11 +23,11 @@ export const CardProductPage = () => {
           <Link to={"/"}>Главная</Link>{" "}
         </Breadcrumb.Item>
         <Breadcrumb.Item>
-          <Link to={`/category/${location.state.category}`}>
-            {location.state.category}
+          <Link to={`/category/${productData.category}`}>
+            {productData.category}
           </Link>
         </Breadcrumb.Item>
-        <Breadcrumb.Item>{name}</Breadcrumb.Item>
+        <Breadcrumb.Item>{productData.name}</Breadcrumb.Item>
       </Breadcrumb>
       this is CardProductPage
     </section>
