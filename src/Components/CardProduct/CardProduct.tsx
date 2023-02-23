@@ -8,8 +8,6 @@ interface IProps {
   item: IProductItem;
 }
 export const CardProduct = ({ item }: IProps) => {
-  const location = useLocation();
-  const { name } = useParams();
   const navigate = useNavigate();
   const [onMouseCursor, setOnMouse] = useState<boolean>(false);
   const onMouse = () => setOnMouse(true);
@@ -17,9 +15,7 @@ export const CardProduct = ({ item }: IProps) => {
     setOnMouse(false);
   };
   const navigatePage = () => {
-    navigate(`/product/${item.price}`, {
-      state: { category: name, product: item.price },
-    });
+    navigate(`/product/${item.name}`);
   };
   return (
     <>

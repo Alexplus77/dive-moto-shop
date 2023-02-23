@@ -1,7 +1,9 @@
+const ProductModel = require("../Models/ProductItemModel");
 const ProductItems = require("../Models/ProductItemModel");
-exports.getProductsController = (req, res) => {
+
+exports.getCategoryByNameController = (req, res) => {
   try {
-    ProductItems.find({}, (error, result) => {
+    ProductItems.find({ category: req.params.category }, (error, result) => {
       if (error) throw new Error("Ошибка отправки списка товаров");
       res.send(result);
     });
