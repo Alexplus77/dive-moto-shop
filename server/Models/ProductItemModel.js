@@ -6,7 +6,13 @@ const productSchema = mongoose.Schema({
   path: String,
   sale: Boolean,
   price: Number,
-  parameters: { type: mongoose.Schema.Types.ObjectId, ref: ParametersItem },
+  parameters: {
+    manufacturer: String,
+    numberOfSeats: Number,
+    enginePower: Number,
+    engineType: String,
+    yearOfRelease: Number,
+  },
   availability: Number,
   countStar: Number,
 });

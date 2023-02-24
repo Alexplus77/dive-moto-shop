@@ -4,6 +4,7 @@ import s from "../CatalogCategoryPage/CatalogCategoryPage.module.css";
 import { useAppDispatch, useAppSelector } from "../../Hooks/reduxHooks";
 import { useEffect } from "react";
 import { getProductByName } from "../../Redux/middlewares/getProductsItems";
+import { CardProductOnPage } from "../../Components/CardProductOnPage";
 
 export const CardProductPage = () => {
   const location = useLocation();
@@ -29,7 +30,7 @@ export const CardProductPage = () => {
         </Breadcrumb.Item>
         <Breadcrumb.Item>{productData.name}</Breadcrumb.Item>
       </Breadcrumb>
-      this is CardProductPage
+      <CardProductOnPage />
     </section>
   );
 };

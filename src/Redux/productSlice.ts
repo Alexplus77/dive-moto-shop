@@ -11,6 +11,7 @@ import type { RootState } from "./stor";
 interface IState {
   productsList: IProductItem[];
   productItem: IProductItem;
+  errors: { message: string };
 }
 const productItemReset = {
   _id: "",
@@ -26,6 +27,7 @@ const productItemReset = {
 const initialState: IState = {
   productsList: [],
   productItem: productItemReset,
+  errors: { message: "" },
 };
 export const productSlice = createSlice({
   name: "productSlice",
@@ -38,6 +40,10 @@ export const productSlice = createSlice({
     });
     builder.addCase(getCategoryByName.fulfilled, (state, action) => {
       state.productsList = action.payload;
+      state.productItem = productItemReset;
+    });
+    builder.addCase(getCategoryByName.rejected, (state, action) => {
+      //state.errors = action.payload;
       state.productItem = productItemReset;
     });
     builder.addCase(getProductByName.fulfilled, (state, action) => {

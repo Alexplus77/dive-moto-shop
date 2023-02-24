@@ -1,4 +1,3 @@
-const ProductModel = require("../Models/ProductItemModel");
 const ProductItems = require("../Models/ProductItemModel");
 
 exports.getCategoryByNameController = (req, res) => {

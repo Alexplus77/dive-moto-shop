@@ -26,4 +26,8 @@ export const getCategoryByName = createAsyncThunk<IProductItem[], string>(
         `${process.env.REACT_APP_API}getCategoryByName/${name}`
       )
       .then(({ data }) => data)
+      .catch((e) => {
+        console.log(e);
+        return e;
+      })
 );

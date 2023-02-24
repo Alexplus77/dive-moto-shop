@@ -1,0 +1,1 @@
+export { CardProductOnPage } from "./CardProductOnPage";
